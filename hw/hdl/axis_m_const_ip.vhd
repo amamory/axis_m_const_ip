@@ -13,7 +13,8 @@ Port (
 );
 end axis_m_const;
 
-architecture Behavioral of axis_m_const
+architecture Behavioral of axis_m_const is
+begin
 
 valid_o <= '0';
 data_o  <= (others => '0');
