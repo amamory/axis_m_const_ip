@@ -17,34 +17,14 @@ if { ![info exists env(VIVADO_TOP_NAME)] } {
 # check the command 'launch_runs' learn more
 # the valid steps are:
 #  - opt_design, power_opt_design, place_design, route_design, phys_opt_design, and write_bitstream
-set synthesis_step opt_design
+set systesis_step opt_design
 
-# open the project
+# Generate bitstream
 open_project ./vivado/${design_name}/${design_name}.xpr
-# check whether this design has any source files. If not, then there is no need for synthesis
-set source_files [get_files -of_objects [get_filesets sources_1]]
-set has_source 0
-foreach source_file $source_files {
-  set extension [string tolower [file extension $source_file]]
-  if {$extension == ".vhd" || $extension == ".v" || $extension == ".sv"} {
-    set has_source 1
-    break
-  } 
-}
-# it does the synthesis only if there is any source file
-if {$has_source == 1} {
-    puts "======================================="
-    puts "Synthesis initiated ..."
-    puts "======================================="
-    update_compile_order -fileset sources_1
-    reset_run -quiet impl_1
-    launch_runs impl_1 -to_step $synthesis_step -jobs 8
-    wait_on_run impl_1
-} else {
-    puts "======================================="
-    puts "There is no HDL file to be synthesized"
-    puts "======================================="
-}
+update_compile_order -fileset sources_1
+reset_run -quiet impl_1
+launch_runs impl_1 -to_step $systesis_step -jobs 8
+wait_on_run impl_1
 
 # If the src dir has not apps to be compiled, then this is a hardware only project.
 # no need to export the hardware to SDK and to run SDK
