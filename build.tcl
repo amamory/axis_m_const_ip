@@ -250,21 +250,15 @@ if {[llength $block_files] == 1} {
   # Generate the wrapper
   make_wrapper -files [get_files *${design_name}.bd] -top
   # It is asuming that if there is a block file, its wrapper will be the top 
-  add_files -norecurse ./vivado/${design_name}/${design_name}.srcs/sources_1/bd/${design_name}/hdl/${top_name}.v
+  add_files -norecurse ./vivado/${design_name}/${design_name}.srcs/sources_1/bd/${design_name}/hdl/${design_name}_wrapper.v
 } elseif {[llength $block_files] > 1} {
   puts "ERROR: multiple block files found. The script only supports one block per design"
   return
 }
 
-# Update the compile order if there is any source file
-# Sometimes, if it is an IP made of IPs, it is not mandatory to have any source file
-if {[llength $sim_files] > 0 || [llength $block_files] > 0} {
-  update_compile_order -fileset sources_1
-}
-# the same for TB, since tb is not mandatory
-if {[llength $sim_files] > 0} {
-  update_compile_order -fileset sim_1
-}
+# Update the compile order
+update_compile_order -fileset sources_1
+update_compile_order -fileset sim_1
 
 # If this design is block-basedm then ensure parameter propagation has been performed
 if {[llength $block_files] == 1} {

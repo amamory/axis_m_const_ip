@@ -7,11 +7,11 @@ if [ -f $VIVADO ]; then
   echo "###################################"
   echo "### Creating the Vivado Project ###"
   echo "###################################"
-  $VIVADO -mode batch -source build.tcl
+  $VIVADO -mode batch -source build.tcl -notrace
   echo "#########################"
   echo "######## Synthesis ######"
   echo "#########################"
-  $VIVADO -mode batch -source build_bitstream_export_sdk.tcl
+  $VIVADO -mode batch -source build_bitstream_export_sdk.tcl -notrace
   # count xml files to decide whether this project is a leaf custom IP or a design that uses custom IPs
   # For instance, considering this command executed in the project root dir:
   #$ find hw/ips/*/ -name *.xml
@@ -22,7 +22,7 @@ if [ -f $VIVADO ]; then
   # However, a leaf custom IP (i.e. and IP that does not use other custom IPs) would have this kind of file tree
   #hw/ips/axis_s_const/component.xml
   # In summary, if the component.xml is found 3 dir layers below the root dir, then this project is a leaf custom IP
-  # if a component.xml file is found in more than 3 dir layers, then this project uses custom IPs
+  # if the component.xml is found in more than 3 dir layers, then this project uses custom IPs
   # Finally, there is no component.xml at all under hw/ips, then this project do not uses any custom IP
   leafIPs=$(find hw/ips/*/ -maxdepth 1 -name *.xml | wc -l) 
   if [ "$leafIPs" -eq 0 ]; 
@@ -30,7 +30,7 @@ if [ -f $VIVADO ]; then
     echo "#########################"
     echo "### Loading bitstream ###"
     echo "#########################"
-    $VIVADO -mode batch -source download_bitstream.tcl
+    $VIVADO -mode batch -source download_bitstream.tcl -notrace
     echo "#########################"
     echo "### Bitstream loaded ####"
     echo "#########################"
