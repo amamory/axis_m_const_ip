@@ -89,7 +89,7 @@ if {[string equal [get_filesets -quiet sources_1] ""]} {
 
 # Set 'sources_1' fileset properties
 set obj [get_filesets sources_1]
-set_property "top" "${top_name}" $obj
+#set_property "top" "${top_name}" $obj
 
 
 # Insert all the vhdl, sv, and verilog source files from ./hw/hdl into the project
@@ -201,10 +201,6 @@ if {[llength $sim_files] > 0} {
 set wcfg_files [glob -nocomplain -directory $origin_dir/hw/hdl/sim "*.wcfg"]
 add_files -quiet -fileset sim_1 $wcfg_files
 
-<<<<<<< HEAD
-=======
-
->>>>>>> template/master
 # Create 'synth_1' run (if not found)
 if {[string equal [get_runs -quiet synth_1] ""]} {
   create_run -name synth_1 -part xc7z020clg484-1 -flow {Vivado Synthesis 2018} -strategy "Vivado Synthesis Defaults" -constrset constrs_1

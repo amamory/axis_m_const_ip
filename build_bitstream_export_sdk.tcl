@@ -17,13 +17,13 @@ if { ![info exists env(VIVADO_TOP_NAME)] } {
 # check the command 'launch_runs' learn more
 # the valid steps are:
 #  - opt_design, power_opt_design, place_design, route_design, phys_opt_design, and write_bitstream
-set systesis_step opt_design
+set syntesis_step opt_design
 
 # Generate bitstream
 open_project ./vivado/${design_name}/${design_name}.xpr
 update_compile_order -fileset sources_1
 reset_run -quiet impl_1
-launch_runs impl_1 -to_step $systesis_step -jobs 8
+launch_runs impl_1 -to_step $syntesis_step -jobs 8
 wait_on_run impl_1
 
 # If the src dir has not apps to be compiled, then this is a hardware only project.
