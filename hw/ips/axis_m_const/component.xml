@@ -47,7 +47,7 @@
         </spirit:parameter>
         <spirit:parameter>
           <spirit:name>FREQ_HZ</spirit:name>
-          <spirit:value spirit:id="BUSIFPARAM_VALUE.CLOCK.FREQ_HZ">100000000</spirit:value>
+          <spirit:value spirit:id="BUSIFPARAM_VALUE.CLOCK.FREQ_HZ">50000000</spirit:value>
         </spirit:parameter>
       </spirit:parameters>
     </spirit:busInterface>
@@ -253,7 +253,7 @@
       <xilinx:coreRevision>2</xilinx:coreRevision>
       <xilinx:coreCreationDateTime>2020-06-26T23:23:22Z</xilinx:coreCreationDateTime>
       <xilinx:tags>
-        <xilinx:tag xilinx:name="user.org:user:axis_m_const:1.0_ARCHIVE_LOCATION">/home/lsa/repos/xilinx/hdls/axis_s_const/hw</xilinx:tag>
+        <xilinx:tag xilinx:name="user.org:user:axis_m_const:1.0_ARCHIVE_LOCATION">/home/lsa/repos/xilinx/hdls/axis_m_const/hw</xilinx:tag>
       </xilinx:tags>
     </xilinx:coreExtensions>
     <xilinx:packagingInfo>
