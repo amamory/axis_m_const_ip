@@ -34,7 +34,7 @@ begin
 	end if;
 end process;
 
-valid_o <= valid_s;
+valid_o <= '0' when valid_s = '1' and ready_s = '1' else '1';
 data_o  <= data_s;
 
 end architecture;
