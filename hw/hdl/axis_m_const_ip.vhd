@@ -5,7 +5,6 @@ use IEEE.std_logic_1164.all;
 entity axis_m_const is
 Port ( 
 	clock   : in  std_logic;
-	reset   : in  std_logic;  
 	-- axi master streaming interface
 	valid_o : out std_logic;
 	ready_i : in  std_logic;
@@ -21,11 +20,7 @@ signal ready_s : std_logic;
 
 attribute dont_touch : string;
 attribute dont_touch of data_s : signal is "true";
-
-attribute dont_touch : string;
 attribute dont_touch of valid_s : signal is "true";
-
-attribute dont_touch : string;
 attribute dont_touch of ready_s : signal is "true";
 
 begin
