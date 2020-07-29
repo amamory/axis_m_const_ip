@@ -98,7 +98,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>dc9de052</spirit:value>
+            <spirit:value>bcaf20c2</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -114,7 +114,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>dc9de052</spirit:value>
+            <spirit:value>bcaf20c2</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -211,7 +211,8 @@
       <spirit:file>
         <spirit:name>../../hdl/axis_m_const_ip.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:userFileType>CHECKSUM_dc9de052</spirit:userFileType>
+        <spirit:userFileType>CHECKSUM_bcaf20c2</spirit:userFileType>
+        <spirit:logicalName>work</spirit:logicalName>
       </spirit:file>
     </spirit:fileSet>
     <spirit:fileSet>
@@ -219,6 +220,7 @@
       <spirit:file>
         <spirit:name>../../hdl/axis_m_const_ip.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
+        <spirit:logicalName>work</spirit:logicalName>
       </spirit:file>
     </spirit:fileSet>
     <spirit:fileSet>
@@ -250,18 +252,18 @@
       </xilinx:taxonomies>
       <xilinx:displayName>axis_m_const_v1_0</xilinx:displayName>
       <xilinx:definitionSource>package_project</xilinx:definitionSource>
-      <xilinx:coreRevision>2</xilinx:coreRevision>
-      <xilinx:coreCreationDateTime>2020-06-26T23:23:22Z</xilinx:coreCreationDateTime>
+      <xilinx:coreRevision>3</xilinx:coreRevision>
+      <xilinx:coreCreationDateTime>2020-07-29T21:22:12Z</xilinx:coreCreationDateTime>
       <xilinx:tags>
-        <xilinx:tag xilinx:name="user.org:user:axis_m_const:1.0_ARCHIVE_LOCATION">/home/lsa/repos/xilinx/hdls/axis_m_const/hw</xilinx:tag>
+        <xilinx:tag xilinx:name="user.org:user:axis_m_const:1.0_ARCHIVE_LOCATION">/home/lsa/repos/xilinx/hdls/axis_m_const_ip/hw/ips/axis_m_const</xilinx:tag>
       </xilinx:tags>
     </xilinx:coreExtensions>
     <xilinx:packagingInfo>
       <xilinx:xilinxVersion>2018.2</xilinx:xilinxVersion>
-      <xilinx:checksum xilinx:scope="busInterfaces" xilinx:value="28390416"/>
-      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="14a573f3"/>
-      <xilinx:checksum xilinx:scope="ports" xilinx:value="d26d1645"/>
-      <xilinx:checksum xilinx:scope="parameters" xilinx:value="bef12b8f"/>
+      <xilinx:checksum xilinx:scope="busInterfaces" xilinx:value="3f469d36"/>
+      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="89bb1680"/>
+      <xilinx:checksum xilinx:scope="ports" xilinx:value="1f20b5b7"/>
+      <xilinx:checksum xilinx:scope="parameters" xilinx:value="194cd6c4"/>
     </xilinx:packagingInfo>
   </spirit:vendorExtensions>
 </spirit:component>
