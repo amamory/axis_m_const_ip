@@ -82,7 +82,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>91850d8e</spirit:value>
+            <spirit:value>620ac8b6</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -98,7 +98,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>91850d8e</spirit:value>
+            <spirit:value>620ac8b6</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -182,7 +182,7 @@
       <spirit:file>
         <spirit:name>../../hdl/axis_m_const_ip.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:userFileType>CHECKSUM_91850d8e</spirit:userFileType>
+        <spirit:userFileType>CHECKSUM_620ac8b6</spirit:userFileType>
         <spirit:logicalName>work</spirit:logicalName>
       </spirit:file>
     </spirit:fileSet>
@@ -223,8 +223,8 @@
       </xilinx:taxonomies>
       <xilinx:displayName>axis_m_const_v1_0</xilinx:displayName>
       <xilinx:definitionSource>package_project</xilinx:definitionSource>
-      <xilinx:coreRevision>6</xilinx:coreRevision>
-      <xilinx:coreCreationDateTime>2020-07-29T21:53:43Z</xilinx:coreCreationDateTime>
+      <xilinx:coreRevision>7</xilinx:coreRevision>
+      <xilinx:coreCreationDateTime>2020-08-08T02:42:47Z</xilinx:coreCreationDateTime>
       <xilinx:tags>
         <xilinx:tag xilinx:name="user.org:user:axis_m_const:1.0_ARCHIVE_LOCATION">/home/lsa/repos/xilinx/hdls/axis_m_const_ip/hw/ips/axis_m_const</xilinx:tag>
       </xilinx:tags>
@@ -232,7 +232,7 @@
     <xilinx:packagingInfo>
       <xilinx:xilinxVersion>2018.2</xilinx:xilinxVersion>
       <xilinx:checksum xilinx:scope="busInterfaces" xilinx:value="cf1cc909"/>
-      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="1ccbd489"/>
+      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="48dc441c"/>
       <xilinx:checksum xilinx:scope="ports" xilinx:value="67a99ff3"/>
       <xilinx:checksum xilinx:scope="parameters" xilinx:value="194cd6c4"/>
     </xilinx:packagingInfo>
